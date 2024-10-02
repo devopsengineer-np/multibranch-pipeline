@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                ls
+                sh 'ls'
             }
         }
         stage('Test') {
             steps {
-                ls -al
+               sh 'ls -al'
             }
         }
         stage('Deploy') {
             steps {
-                pwd
+              sh  'pwd'
             }
         }
     }
